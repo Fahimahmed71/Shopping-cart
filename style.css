@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+}
+
+.bodydark {
+  background: rgb(15, 11, 48);
+}

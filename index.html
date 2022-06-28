@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwsome -->
+    <script src="https://kit.fontawesome.com/28ecceccdf.js" crossorigin="anonymous"></script>
+
+    <!-- JavaScript -->
+    <script src="./app.js" defer></script>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="body">
+    <button id="dark-mode" class="bg-violet-600 px-5 py-3 rounded-full my-5 block mx-auto"><i
+            class="fa-solid fa-moon fa-2x text-white"></i></button>
+    <h1 class="text-center font-bold text-4xl text-blue-600">Shopping Cart</h1>
+
+    <section class="mt-20 container mx-auto flex justify-around items-center">
+
+        <div>
+            <article class="flex items-center gap-5">
+                <img class="h-52 rounded-lg"
+                    src="https://images.unsplash.com/photo-1586339392738-65847e399f7e?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870"
+                    alt="">
+
+                <div>
+                    <h1 class="text-2xl font-bold text-red-400">Sunglass</h1>
+
+                    <h4 class="text-xl font-semibold text-gray-600">Price: <span id="glass-price">0</span>$</h4>
+
+                    <h4 class="text-xl font-semibold text-gray-600">Item: <span id="glass-item">0</span></h4>
+
+                    <div class="flex gap-3 mt-3">
+                        <i id="glass-plus"
+                            class="fa-solid fa-plus hover:cursor-pointer text-gray-600 hover:text-red-600"></i>
+
+                        <i id="glass-minus"
+                            class="fa-solid fa-minus hover:cursor-pointer text-gray-600 hover:text-red-600"></i>
+                    </div>
+
+                    <button class="bg-red-500 text-white px-5 py-2 my-3 rounded-lg hover:animate-pulse"
+                        id="glass-btn">Buy Now</button>
+                </div>
+            </article>
+
+            <article class="flex items-center gap-5 my-10">
+                <img class="h-52 rounded-lg"
+                    src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870"
+                    alt="">
+
+                <div>
+                    <h1 class="text-2xl font-bold text-yellow-400">Headphone</h1>
+
+                    <h4 class="text-xl font-semibold text-gray-600">Price: <span id="headphone-price">0</span>$</h4>
+
+                    <h4 class="text-xl font-semibold text-gray-600">Item: <span id="headphone-item">0</span></h4>
+
+                    <div class="flex gap-3 mt-3">
+                        <i id="headphone-plus"
+                            class="fa-solid fa-plus hover:cursor-pointer text-gray-600 hover:text-red-600"></i>
+
+                        <i id="headphone-minus"
+                            class="fa-solid fa-minus hover:cursor-pointer text-gray-600 hover:text-red-600"></i>
+                    </div>
+
+                    <button id="headphone-btn"
+                        class="bg-red-500 text-white px-5 py-2 my-3 rounded-lg hover:animate-pulse">Buy Now</button>
+                </div>
+            </article>
+        </div>
+
+        <div>
+            <h1 class="text-xl font-semibold text-blue-600">Sub Total: <span id="sub-total">0</span>$</h1>
+            <h1 class="text-xl font-semibold text-red-500">Tex: <span id="tex">0</span></h1>
+            <h1 class="text-xl font-bold text-green-700">Total: <span id="total">0</span></h1>
+        </div>
+    </section>
+</body>
+
+</html>
